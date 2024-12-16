@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Games - Listado de Videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .lunar-games-logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        .lunar-logo-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: #007bff;
+        }
+        .lunar-games-text {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            border-bottom: none;
+        }
+        .table-hover tbody tr:hover {
+            background-color: rgba(0,123,255,0.1);
+            transition: background-color 0.3s ease;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(0,0,0,0.02);
+        }
+        .actions-column {
+            white-space: nowrap;
+            width: 120px;
+        }
+        .btn-custom {
+            transition: all 0.3s ease;
+            border-radius: 20px;
+        }
+        .btn-custom:hover {
+            transform: scale(1.05);
+        }
+        .game-image {
+            height: 90px;
+            width: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .game-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/admin/">
+                <div class="lunar-games-logo">
+                    <i class="fas fa-moon lunar-logo-icon"></i>
+                    <span class="lunar-games-text">Lunar Games</span>
+                </div>
+            </a>
+            
+            <!-- Botón para menú colapsable en dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAdminMenu" aria-controls="navbarAdminMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú principal -->
+            <div class="collapse navbar-collapse" id="navbarAdminMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Enlace a "Gestionar Productos" -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/listar-videojuegos">
+                            <i class="fas fa-shopping-cart me-2"></i>Gestionar Productos
+                        </a>
+                    </li>
+                    
+                    <!-- Enlace a "Gestionar Pedidos" -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/listar-pedidos">
+                            <i class="fas fa-truck me-2"></i>Gestionar Pedidos
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Enlace a "Cerrar Sesión" -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="http://localhost:4200/">
+                            <i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
