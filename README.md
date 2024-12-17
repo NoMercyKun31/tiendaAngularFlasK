@@ -14,13 +14,6 @@ Este proyecto es una aplicación de comercio electrónico que utiliza Angular pa
 - Flask (Python)
 - SQL Database
 
-## Requisitos Previos
-
-- Node.js y npm
-- Python 3.x
-- XAMPP (para el servidor local)
-- Angular CLI
-
 ## Ejecución del Proyecto
 
 1. **Iniciar el backend**
@@ -32,7 +25,7 @@ Este proyecto es una aplicación de comercio electrónico que utiliza Angular pa
 2. **Iniciar el frontend**
    ```bash
    cd cliente
-   ng ng serve --proxy-config proxy.conf.json
+   ng serve --proxy-config proxy.conf.json
    
    ```
 
